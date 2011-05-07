@@ -15,7 +15,7 @@ I also wanted somewhere to try out some of the new `HTML5`/`CSS3` features.
 
 Requirements
 ======
-- PHP 5 +
+- PHP 5 + (Tested on PHP 5.3.6)
 
 Features
 ======
