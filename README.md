@@ -21,6 +21,7 @@ Features
 ======
 - CSS3 animations (Think I'll get rid of these soon, they are more of a hindrance then a help)
 - CSS3 in general (I recommend you use a webkit based browser, but works ok on others)
+- Supports both HTTP and HTTPS
 
 Install
 ======
@@ -44,3 +45,15 @@ Known bugs
 =====
 - Some file/folder names won't be encoded proper.
 	- Symbols like `+` aren't coming through
+	
+Todo
+=====
+Change layout, take out rounded rectangle for size and replace with two lines, one top one bottom with no gaps between files
+	--------
+	  2 MB	| https://localhost/pics/file1.png
+	--------
+	  4 MB	| https://localhost/pics/file2.png
+	--------
+	  9 MB	| https://localhost/pics/file3.png
+	--------
+	
