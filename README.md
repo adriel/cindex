@@ -42,4 +42,5 @@ Configuration examples
 
 Known bugs
 =====
-Some file/folder names won't be encoded proper.
+- Some file/folder names won't be encoded proper.
+	- Symbols like `+` aren't coming through
