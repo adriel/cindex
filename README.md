@@ -7,11 +7,11 @@ along with the full URL path for easy access to copy/past bulk URLS.
 
 None of the web servers I had tried provided a good easy way to do this, short of editing their template files for the index page,
 which didn't always exist. 
-As well as this I wanted to have the same look and features on multiple web servers (Apache, LightTPD, nginx etc)
-this proved rather tricky so I decided to go with something each of them provided (if configured), PHP.
+As well as this I wanted to have the same look and features on multiple web servers (`Apache`, `LightTPD`, `nginx` etc)
+this proved rather tricky so I decided to go with something each of them provided (if configured), `PHP`.
 
 
-I also wanted somewhere to try out some of the new HTML5/CSS3 features.
+I also wanted somewhere to try out some of the new `HTML5`/`CSS3` features.
 
 Requirements
 ======
@@ -24,7 +24,7 @@ Features
 
 Install
 ======
-Copy the cindex.php and style folder to your server where your web server can access it and link to it from within your configuration as the main index file if non found.
+Copy the `cindex.php` and `style` folder to your server where your web server can access it and link to it from within your configuration as the main index file if non found.
 
 Configuration examples
 ======
