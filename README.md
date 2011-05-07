@@ -49,6 +49,7 @@ Known bugs
 Todo
 =====
 Change layout, take out rounded rectangle for size and replace with two lines, one top one bottom with no gaps between files
+
 	--------
 	  2 MB	| https://localhost/pics/file1.png
 	--------
