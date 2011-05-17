@@ -29,13 +29,9 @@ Copy the `cindex.php` and `style` folder to your server where your web server ca
 
 Configuration examples
 ======
-**nginx config (`/etc/nginx/nginx.conf`):**
+**nginx config (`/etc/nginx/nginx.conf`):** [nginx index module](http://wiki.nginx.org/HttpIndexModule) 
 
-	location / {
-		root   /path/www/;
-		index  index.html index.htm, index.php, /dir_to_cindex/cindex.php;
-		autoindex  off;
-	}
+	index index.html index.htm index.php /dir_to_cindex/cindex.php;
 
 **LightTPD config (`/etc/lighttpd/lighttpd.conf`):**
 
@@ -57,4 +53,3 @@ Change layout, take out rounded rectangle for size and replace with two lines, o
 	--------
 	  9 MB	| https://localhost/pics/file3.png
 	--------
-	
