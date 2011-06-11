@@ -161,54 +161,54 @@ foreach ($files as $file_name) {
 // 	</tbody>
 // </table>
 // echo "<table border=\"0\" cellspacing=\"0\">\n";
-	if (trim("$DIR_LIST")) {
-		echo "<table>\n";
-		echo "<caption class=\"title\">Directories:</caption>\n";
-		echo "<tbody>\n<tr>\n";
-		echo "	<td class=\"tsize\">\n$DIR_LIST_SIZE\n	</td>\n";
-		echo "	<td class=\"tfile\">\n$DIR_LIST\n	</td>\n";
-		echo "</tr>\n</tbody>\n";
-		echo "</table>\n";
+	if (trim($DIR_LIST)) {
+		echo '<table>\n';
+		echo '<caption class="title">Directories:</caption>\n';
+		echo '<tbody>\n<tr>\n';
+		echo '	<td class="tsize">\n' . $DIR_LIST_SIZE . '\n	</td>\n';
+		echo '	<td class="tfile">\n' . $DIR_LIST . '\n	</td>\n';
+		echo '</tr>\n</tbody>\n';
+		echo '</table>\n';
 	}
 
-	if (trim("$FILE_LIST_NEW")) {
-		echo "<table>\n";
-		echo "<caption class=\"title\">Files NEW (~12h):</caption>\n";
-		echo "<tr>\n";
-		echo "	<td class=\"tsize\">\n$FILE_LIST_NEW_SIZE\n	</td>\n";
-		echo "	<td class=\"tfile\">\n$FILE_LIST_NEW\n	</td>\n";
-		echo "</tr>\n";
-		echo "</table>\n";	
+	if (trim($FILE_LIST_NEW)) {
+		echo '<table>\n';
+		echo '<caption class="title\">Files NEW (~12h):</caption>\n';
+		echo '<tr>\n';
+		echo '	<td class="tsize">\n' . $FILE_LIST_NEW_SIZE. '\n	</td>\n';
+		echo '	<td class="tfile">\n' . $FILE_LIST_NEW . '\n	</td>\n';
+		echo '</tr>\n';
+		echo '</table>\n';	
 	}
 
-	if (trim("$FILE_LIST_HD")) {
-		echo "<table>\n";
-		echo "<caption class=\"title\">Files 720p/1080p:</caption>\n";
-		echo "<tr>\n";
-		echo "	<td class=\"tsize\">\n$FILE_LIST_HD_SIZE\n	</td>\n";
-		echo "	<td class=\"tfile\">\n$FILE_LIST_HD\n	</td>\n";
-		echo "</tr>\n";
-		echo "</table>\n";
+	if (trim($FILE_LIST_HD)) {
+		echo '<table>\n';
+		echo '<caption class="title">Files 720p/1080p:</caption>\n';
+		echo '<tr>\n';
+		echo '	<td class="tsize">\n' . $FILE_LIST_HD_SIZE. '\n	</td>\n';
+		echo '	<td class="tfile">\n' . $FILE_LIST_HD. '\n	</td>\n';
+		echo '</tr>\n';
+		echo '</table>\n';
 	}
 
-	if (trim("$FILE_LIST")) {
-		echo "<table>\n";
-		echo "<caption class=\"title\">Files:</caption>\n";
-		echo "<tr>\n";
-		echo "	<td class=\"tsize\">\n$FILE_LIST_SIZE\n	</td>\n";
-		echo "	<td class=\"tfile\">\n$FILE_LIST\n	</td>\n";
-		echo "</tr>\n";
-		echo "</table>\n";	
+	if (trim($FILE_LIST)) {
+		echo '<table>\n';
+		echo '<caption class="title">Files:</caption>\n';
+		echo '<tr>\n';
+		echo '	<td class="tsize">\n' . $FILE_LIST_SIZE. '\n	</td>\n';
+		echo '	<td class="tfile">\n' . $FILE_LIST. '\n	</td>\n';
+		echo '</tr>\n';
+		echo '</table>\n';	
 	}
 
 	if (trim("$OTHER_LIST")) {
-		echo "<table>\n";
-		echo "<caption class=\"title\">Other?</caption>\n";
-		echo "<tr>\n";
-		echo "	<td class=\"tsize\">\n$OTHER_LIST_SIZE\n	</td>\n";
-		echo "	<td class=\"tfile\">\n$OTHER_LIST\n	</td>\n";
-		echo "</tr>\n";
-		echo "</table>\n";
+		echo '<table>\n';
+		echo '<caption class="title">Other?</caption>\n';
+		echo '<tr>\n';
+		echo '	<td class="tsize">\n' . $OTHER_LIST_SIZE. '\n	</td>\n';
+		echo '	<td class="tfile">\n' . $OTHER_LIST. '\n	</td>\n';
+		echo '</tr>\n';
+		echo '</table>\n';
 	}
 
 
@@ -219,7 +219,7 @@ function URL_ENCODE($url)
 	// $encoded_url = str_replace(" ", "%20", "$url");
 	// return "$encoded_url";
 	// return myUrlEncode("$url");
-	return rawurlencode("$url");
+	return rawurlencode($url);
 }
 
 function myUrlEncode($string) {
@@ -228,7 +228,7 @@ function myUrlEncode($string) {
     // $replacements = array('%23', '%25', '%5E', '%20', '%7C', '%7B', '%7D', '%22', '%27', '%3C', '%3E' );
     // $entities = 	array("#",   "%",   "^",   " ",   "|",   "{",   "}",   '"',   "'",   "<",   ">" );
     $replacements = array('%25', '%23',  '%20', '%22', '%27', '%5C', '%3F');
-    $entities = 	array("%",   "#",    " ",   '"',   "'",   "\\",  "?");
+    $entities = 	array('%',   '#',    ' ',   '"',   "'",   "\\",  '?');
 
     // return str_replace($entities, $replacements, urlencode($string));
     return str_replace($entities, $replacements, $string);
