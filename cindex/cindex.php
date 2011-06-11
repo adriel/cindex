@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Listing <?=$_SERVER["REQUEST_URI"]?></title>
+	<title>Listing <?php $_SERVER["REQUEST_URI"]?></title>
 	<link rel="stylesheet" href="/cindex/style/main.css" type="text/css" />
 </head>
 <body id="index" class="home">
