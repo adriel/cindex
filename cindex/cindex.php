@@ -277,7 +277,7 @@ function file_size($inputSizeBytes)
 	//  * undocumented function
 	//  *
 	//  * @return void
-	//  * @author netl
+	//  * @author A
 	//  **/
 	// function DOMAIN_NAME($option)
 	// {
@@ -421,7 +421,7 @@ function file_size($inputSizeBytes)
 	 * Get URI scheme used (HTTP/HTTPS) 
 	 *
 	 * @return https or http
-	 * @author netl
+	 * @author A
 	 **/
 	function get_uri_scheme_name()
 	{
