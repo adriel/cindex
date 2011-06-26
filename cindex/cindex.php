@@ -218,8 +218,8 @@ function URL_ENCODE($url)
 {
 	// $encoded_url = str_replace(" ", "%20", "$url");
 	// return "$encoded_url";
-	// return myUrlEncode("$url");
-	return rawurlencode($url);
+	return myUrlEncode("$url");
+	// return rawurlencode($url);
 }
 
 function myUrlEncode($string) {
