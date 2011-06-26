@@ -173,7 +173,7 @@ foreach ($files as $file_name) {
 
 	if (trim($FILE_LIST_NEW)) {
 		echo '<table>';
-		echo '<caption class="title\">Files NEW (~12h):</caption>';
+		echo '<caption class="title">Files NEW (~12h):</caption>';
 		echo '<tr>';
 		echo '	<td class="tsize">' . $FILE_LIST_NEW_SIZE. '	</td>';
 		echo '	<td class="tfile">' . $FILE_LIST_NEW . '	</td>';
