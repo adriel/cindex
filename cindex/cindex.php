@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Listing <?php $_SERVER["REQUEST_URI"]?></title>
-	<link rel="stylesheet" href="/cindex/style/main.css" type="text/css" />
+	<link rel="stylesheet" href="style/main.css" type="text/css" />
 </head>
 <body id="index" class="home">
 <header>
@@ -160,55 +160,55 @@ foreach ($files as $file_name) {
 // 		</tr>
 // 	</tbody>
 // </table>
-// echo "<table border=\"0\" cellspacing=\"0\">\n";
+// echo "<table border=\"0\" cellspacing=\"0\">";
 	if (trim($DIR_LIST)) {
-		echo '<table>\n';
-		echo '<caption class="title">Directories:</caption>\n';
-		echo '<tbody>\n<tr>\n';
-		echo '	<td class="tsize">\n' . $DIR_LIST_SIZE . '\n	</td>\n';
-		echo '	<td class="tfile">\n' . $DIR_LIST . '\n	</td>\n';
-		echo '</tr>\n</tbody>\n';
-		echo '</table>\n';
+		echo '<table>';
+		echo '<caption class="title">Directories:</caption>';
+		echo '<tbody><tr>';
+		echo '	<td class="tsize">' . $DIR_LIST_SIZE . '	</td>';
+		echo '	<td class="tfile">' . $DIR_LIST . '	</td>';
+		echo '</tr></tbody>';
+		echo '</table>';
 	}
 
 	if (trim($FILE_LIST_NEW)) {
-		echo '<table>\n';
-		echo '<caption class="title\">Files NEW (~12h):</caption>\n';
-		echo '<tr>\n';
-		echo '	<td class="tsize">\n' . $FILE_LIST_NEW_SIZE. '\n	</td>\n';
-		echo '	<td class="tfile">\n' . $FILE_LIST_NEW . '\n	</td>\n';
-		echo '</tr>\n';
-		echo '</table>\n';	
+		echo '<table>';
+		echo '<caption class="title\">Files NEW (~12h):</caption>';
+		echo '<tr>';
+		echo '	<td class="tsize">' . $FILE_LIST_NEW_SIZE. '	</td>';
+		echo '	<td class="tfile">' . $FILE_LIST_NEW . '	</td>';
+		echo '</tr>';
+		echo '</table>';	
 	}
 
 	if (trim($FILE_LIST_HD)) {
-		echo '<table>\n';
-		echo '<caption class="title">Files 720p/1080p:</caption>\n';
-		echo '<tr>\n';
-		echo '	<td class="tsize">\n' . $FILE_LIST_HD_SIZE. '\n	</td>\n';
-		echo '	<td class="tfile">\n' . $FILE_LIST_HD. '\n	</td>\n';
-		echo '</tr>\n';
-		echo '</table>\n';
+		echo '<table>';
+		echo '<caption class="title">Files 720p/1080p:</caption>';
+		echo '<tr>';
+		echo '	<td class="tsize">' . $FILE_LIST_HD_SIZE. '	</td>';
+		echo '	<td class="tfile">' . $FILE_LIST_HD. '	</td>';
+		echo '</tr>';
+		echo '</table>';
 	}
 
 	if (trim($FILE_LIST)) {
-		echo '<table>\n';
-		echo '<caption class="title">Files:</caption>\n';
-		echo '<tr>\n';
-		echo '	<td class="tsize">\n' . $FILE_LIST_SIZE. '\n	</td>\n';
-		echo '	<td class="tfile">\n' . $FILE_LIST. '\n	</td>\n';
-		echo '</tr>\n';
-		echo '</table>\n';	
+		echo '<table>';
+		echo '<caption class="title">Files:</caption>';
+		echo '<tr>';
+		echo '	<td class="tsize">' . $FILE_LIST_SIZE. '	</td>';
+		echo '	<td class="tfile">' . $FILE_LIST. '	</td>';
+		echo '</tr>';
+		echo '</table>';	
 	}
 
 	if (trim("$OTHER_LIST")) {
-		echo '<table>\n';
-		echo '<caption class="title">Other?</caption>\n';
-		echo '<tr>\n';
-		echo '	<td class="tsize">\n' . $OTHER_LIST_SIZE. '\n	</td>\n';
-		echo '	<td class="tfile">\n' . $OTHER_LIST. '\n	</td>\n';
-		echo '</tr>\n';
-		echo '</table>\n';
+		echo '<table>';
+		echo '<caption class="title">Other?</caption>';
+		echo '<tr>';
+		echo '	<td class="tsize">' . $OTHER_LIST_SIZE. '	</td>';
+		echo '	<td class="tfile">' . $OTHER_LIST. '	</td>';
+		echo '</tr>';
+		echo '</table>';
 	}
 
 
