@@ -1,127 +1,77 @@
-/* Set file list length */
-td.tfile pre.filename {
-	padding-right: 4px;
-}
-
-
 body
 {
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 13px;
-	background-color: #545454;
+	background-color: #ffffff;
 	text-decoration: none;
+	font: 13px "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding-left: 20px;
+	padding-top: 10px;
 }
 
 h1 {
-	margin-top: 1px;
-	margin-bottom: 4px;
-	text-shadow: #414141 1px 1px 1px;
-	color: #e3e5e5;
+	color: #484848;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	display: none;
 }
 
 pre.filename {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	pajdding-left: 4px;
-	-webkit-transition-property:color,background-color,padding-left;-webkit-transition-duration:500ms,500ms,500ms
+	padding: 2px 10px 2px 4px;
 }
-pre.filename:hover{background-color:#efefef;color:#333;padding-left:20px}
+pre.filename:hover{
+	background-color:#efefef;
+	color:#333;
+}
 
+#back-arrow {
+	font: italic 15px "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding-right: 2px;
+}
 p.location {
+	color: #737373;
+	margin-bottom: 15px;
 	margin-top: 0;
-	color: #ecf1f3;
+	font-size: 11px;
 }
 
-#index p.location a {
-	color: #d4d8d9;
-	text-shadow: #494949 1px 1px 0;
+td.tsize, td.tfile {
+	line-height: 25px;
 }
-
 td.tsize {
 	margin: 0;
-	padding: 0;
-	width: 1px; /* Fix for Chrome to stop it create a big space */
+	padding-right: 0;
 }
 
 td.tfile {
-	padding: 0;
+	padding-left: 0;
 }
 
 div.filesize {
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
-	
-	-moz-border-radius: 10px;
-	border-radius: 4px;
-	text-align: center;
-	
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F0F0F0), to(#D4D4D4), color-stop(1,#333333));
-  	-webkit-box-shadow: 1px 1px 1px #fffeff;
-	text-shadow: #f3f6f6 0 1px 0;
-	border: 1px solid #909090;
-	background-color: #e1e1e1;
-	font-size: 11px;
-	width: 76px;
+	font-size: 12px;
+	color: #6b6b6b;
+	min-width: 70px;
 }
 
 pre.filename, div.filesize {
-	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 	margin: 0;
-}
-
-th.title {
-	/* Legacy browsers */
-	background: #c8cdcd url("dt-bg.png") repeat-x top;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	/* Recent browsers */
-	background: -moz-linear-gradient(
-		top,
-		#dde0e2,
-		#c8cdcd
-	);
-	background: -webkit-gradient(
-		linear,
-		left top, left bottom,
-		from(#dde0e2),
-		to(#c8cdcd)
-	);
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	line-height: 21px;
 }
 
 caption.title, caption.titled {
-		/* Legacy browsers */
-	background: #c8cdcd url("dt-bg.png") repeat-x top;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	/* Recent browsers */
-	background: -moz-linear-gradient(
-		top,
-		#dde0e2,
-		#c8cdcd
-	);
-	background: -webkit-gradient(
-		linear,
-		left top, left bottom,
-		from(#dde0e2),
-		to(#c8cdcd)
-	);
 	text-align: left;
-	padding-left: 4px;
-	padding-top: 2px;
 	font-weight: bold;
-	margin-right: -2px;
+	background-color: #e2e8e8;
 }
 
 /* Row alt colors */
-pre.filename:nth-child(odd) {
+pre.filename:nth-child(odd),  {
 	background-color: #eff3f3;
 }
-pre.filename:nth-child(even) {
+pre.filename:nth-child(even), div.filesizealt:nth-child(even) {
 	background-color: #eaefef;
 }
 
@@ -135,68 +85,27 @@ pre.filename:nth-child(even):hover{
 }
 
 div.filesizealt {
-	float: left;
-	clear: left;
-	background-color: #eff3f3;
 	margin: 0;
-	padding: 2px 6px 3px 3px;
-
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
 }
 
 /* Row titles */
-
 table {
 	border-spacing: 0;
-	border-left: 1px solid #F6F6F6;
-	border-right: 1px solid #F6F6F6;
 	color: #414141;
 	margin-bottom: 11px;
-	float: left;
-	clear: left;
-	
-	-webkit-border-bottom-left-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	-moz-border-radius-bottomright: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	padding: 4px 0 3px;
 	background-color: #eff3f3;
+	padding: 4px 0 3px;
 }
 
 caption.title {
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	
-	text-shadow: rgba(239,243,243,0.51) 1px 1px 0;
-	letter-spacing: 1pt;
-		
-	border-left: 1px solid #F6F6F6;
-	border-right: 1px solid #F6F6F6;
-	border-top: 1px solid #F6F6F6;
-	
-	border-bottom: 1px solid #9ea0a0;
+	padding: 7px 7px 7px 9px;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: normal;
 }
-
-
-table:last-of-type {
-	-webkit-border-bottom-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	
-	border-left: 1px solid #F6F6F6;
-	border-right: 1px solid #F6F6F6;
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/* Set just the first title's top margent to 0 */
 
 /* unvisited link */
 a:link {
@@ -209,22 +118,7 @@ a:visited {
 	color: #787b7b;
 }
 
-/* hover link */
-/*a:hover
-{
-	color: #1a1a1a;
-	text-shadow: #bebebe 1px 1px 4px;
-	background-color: rgba(91,98,99,0.18);
-	text-decoration: none;
-}*/
-
 /* selected link */
 a:active {
 	color: #767878;
-}
-
-#buffer {
-	height: 0px;
-	float: left;
-	clear: left;
 }
