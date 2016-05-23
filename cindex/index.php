@@ -34,7 +34,6 @@ $files = scandir(URL_FORMAT("full_uri_path"));
 echo "<p class=\"location\"><span id=\"back-arrow\">&lsaquo;</span> <a href=\"".dirname(URL_FORMAT("just_uri", get_uri_scheme_name() ))."\">".urldecode(URL_FORMAT("full_url", get_uri_scheme_name()))."</a></p>\n";
 
 // List of extensions to list
-// $extensions = array("txt","php","htm");
 $extensions = array("");
 $ext = array("");
 
