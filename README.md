@@ -3,53 +3,37 @@ Background
 cindex is an abbreviation of Clean Index. 
 
 I created cindex because I wanted a list of files/folders in the current directory with some easy custom styles and details about each file 
-along with the full URL path for easy access to copy/past bulk URLS.
+along with the full URL path for easy access to copy/past bulk URLs.
 
-None of the web servers I had tried provided a good easy way to do this, short of editing their template files for the index page,
+None of the web servers I have tried provided a good easy way to do this, short of editing their template files for the index page,
 which didn't always exist. 
 As well as this I wanted to have the same look and features on multiple web servers (`Apache`, `LightTPD`, `nginx` etc)
 this proved rather tricky so I decided to go with something each of them provided (if configured), `PHP`.
 
 
-I also wanted somewhere to try out some of the new `HTML5`/`CSS3` features.
-
 Requirements
 ======
-- PHP 5 + (Tested on PHP 5.3.6)
+- PHP 5+ (Tested on PHP 5.5.34)
 
 Features
 ======
-- CSS3 animations (Think I'll get rid of these soon, they are more of a hindrance then a help)
-- CSS3 in general (I recommend you use a webkit based browser, but works ok on others)
 - Supports both HTTP and HTTPS
+- Shows new files added within the last 12 hours
 
 Install
 ======
-Copy the `cindex.php` and `style` folder to your server where your web server can access it and link to it from within your configuration as the main index file if non found.
+Copy the `index.php` and `style` folder to your server where your web server can access it and link to it from within your configuration as the main index file if non found.
 
 Configuration examples
 ======
 **nginx config (`/etc/nginx/nginx.conf`):** [nginx index module](http://wiki.nginx.org/HttpIndexModule) 
 
-	index index.html index.htm index.php /dir_to_cindex/cindex.php;
+	index index.html index.htm index.php /dir_to_cindex/index.php;
 
 **LightTPD config (`/etc/lighttpd/lighttpd.conf`):**
 
-	index-file.names = ( "index.html", "index.php", "/dir_to_cindex/cindex.php" )
+	index-file.names = ( "index.html", "index.php", "/dir_to_cindex/index.php" )
 
 Known bugs
 =====
-- Some file/folder names won't be encoded proper.
-	- Symbols like `+` aren't coming through
-	
-Todo
-=====
-Change layout, take out rounded rectangle for size and replace with two lines, one top one bottom with no gaps between files
-
-	--------
-	  2 MB	| https://localhost/pics/file1.png
-	--------
-	  4 MB	| https://localhost/pics/file2.png
-	--------
-	  9 MB	| https://localhost/pics/file3.png
-	--------
+- None, please report any you find.
