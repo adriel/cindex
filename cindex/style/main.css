@@ -68,7 +68,7 @@ caption.title, caption.titled {
 }
 
 /* Row alt colors */
-pre.filename:nth-child(odd),  {
+pre.filename:nth-child(odd)  {
 	background-color: #eff3f3;
 }
 pre.filename:nth-child(even), div.filesizealt:nth-child(even) {
